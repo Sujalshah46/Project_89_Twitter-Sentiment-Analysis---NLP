@@ -34,6 +34,7 @@ LIST_FIELDS = ("tweets", "data", "results", "items", "records")
 
 NEGATIVE_LABELS = {
     "1",
+    "true",
     "hate",
     "hateful",
     "hate speech",
@@ -47,6 +48,7 @@ NEGATIVE_LABELS = {
 
 NON_HATE_LABELS = {
     "0",
+    "false",
     "not hate",
     "not_hate",
     "non hate",

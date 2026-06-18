@@ -40,8 +40,9 @@ python scripts/tweetclaw_to_hate_speech_csv.py tweetclaw-labeled.json "Twitter S
 ```
 
 The converter only accepts binary hate-speech labels. It preserves `0` and `1`
-values and also accepts clear text labels such as `not_hate`, `normal`,
-`hate`, `racist`, `sexist`, `offensive`, or `toxic`. It rejects generic
+values, accepts boolean `true` and `false` values from `hate_speech` fields, and
+also accepts clear text labels such as `not_hate`, `normal`, `hate`, `racist`,
+`sexist`, `offensive`, or `toxic`. It rejects generic
 sentiment labels such as `positive`, `negative`, and `neutral` because those do
 not mean the same thing as this notebook's hate-speech target.
 
